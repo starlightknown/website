@@ -24,9 +24,46 @@ In this step, we will send a message to our application using MQTT broker and ch
 {`npm start`}
 </CodeBlock>
 
-2. Send a correct message to your application:
+2. Now let's try to send a message:
+
+<CodeBlock language="bash">
+  {`mqtt pub -t 'light/measured' -h 'test.mosquitto.org' -m '{"id": 1, "lumens": "3", "sentAt": "2017-06-07T12:34:32.000Z"}'`}
+  </CodeBlock>
+  
+ Go back to the previous terminal and check if your application logged the streetlight condition you just sent, with errors related to the invalid message.
+ 
+ <CodeBlock language="yaml">
+  {`  message:
+        name: lumensInfo
+        payload:
+          type: object
+          properties:
+            id:
+              type: integer
+              minimum: 0
+              description: Id of the streetlight.
+            lumens:
+              type: integer
+              minimum: 0
+              description: Light intensity measured in lumens.`}
+  </CodeBlock>
+  
+Here, you can see that the property `lumens` has type `integer` but you are sending a message with type `string`
+
+3. Send a correct message to your application:
 
 <CodeBlock language="bash">
   {`mqtt pub -t 'light/measured' -h 'test.mosquitto.org' -m '{"id": 1, "lumens": 3, "sentAt": "2017-06-07T12:34:32.000Z"}'`}
   </CodeBlock>
 
+You can see that your generated application received a message in the terminal:
+
+<CodeBlock language="bash">
+  {`light/measured was received:
+{ id: 1, lumens: 3, sentAt: '2017-06-07T12:34:32.000Z' }`}
+  </CodeBlock>
+
+This indicates that your message is valid and it is recieved by the application correctly.
+
+# Summary 
+In this tutorial, you learnt how to connect your generated application to MQTT broker,send messages through it,how to identify when an invalid message is sent to your application and how you can correct the invalid message. 
