@@ -60,7 +60,7 @@ The following is a list of tools that generate code from an AsyncAPI document; n
 | :------------- | :------------- | :----------------- |
 | [AsyncAPI Generator](https://github.com/asyncapi/generator) | Use your AsyncAPI definition to generate literally anything. Markdown documentation, Node.js code, Java code, HTML documentation, anything! **[Click here](https://github.com/search?q=topic%3Aasyncapi+topic%3Agenerator+topic%3Atemplate) to get a list of the existing templates**. | Node.js/Hermes, Java/Spring, Markdown, HTML, and more.
 | [Node-RED AsyncAPI plugin](https://github.com/dalelane/node-red-contrib-plugin-asyncapi) | Use your AsyncAPI definition to generate and configure Node-RED nodes. | [Node-RED](https://nodered.org) |
-| [MultiAPI Generator](https://github.com/corunet/scs-multiapi-plugin) | Use AsyncAPI definition, several of them at the same time, to generate Spring Cloud code with Maven. | Java/Spring, Maven |
+| [MultiAPI Generator](https://github.com/sngular/scs-multiapi-plugin) | Use AsyncAPI definition, several of them at the same time, to generate Spring Cloud code with Maven. | Java/Spring, Maven |
 | [asyncapi_gencpp](https://github.com/hatchbed/asyncapi_gencpp) | Use an AsyncAPI definition to generate C++ code for serializing and deserializing components and messages | C++ |
 
 The language you're looking for is not here? You created a new code generator and want to list it here? [Let us know!](https://github.com/asyncapi/asyncapi/issues/new)
@@ -91,7 +91,7 @@ The following is a list of tools that generate human-readable documentation from
 | Link           | Description    | Language/Kind |
 | :------------- | :------------- | :------------- |
 | [AsyncAPI Generator](https://github.com/asyncapi/generator) | Use your AsyncAPI definition to generate literally anything. Markdown documentation, Node.js code, HTML documentation, anything! **[Click here](https://github.com/search?q=topic%3Aasyncapi+topic%3Agenerator+topic%3Atemplate) to get a list of the existing templates**. | CLI / JavaScript
-| [Bump](https://bump.sh) | OpenAPI 2 & 3 / AsyncAPI 2 documentation generator, with automatic changelog and visual diff. | SaaS
+| [Bump.sh](https://bump.sh) | OpenAPI 2 & 3 / AsyncAPI 2 documentation generator, with automatic changelog and visual diff. | SaaS
 | [Widdershins](https://github.com/Mermade/widdershins) | OpenAPI 3.0 / Swagger 2.0 / AsyncAPI 1.0 definition to Slate / Shins compatible markdown. Thanks to [@PermittedSoc](https://twitter.com/@Permittedsoc). | CLI / JavaScript
 | [Cupid](https://github.com/asyncapi/cupid) | A library that focuses on finding and analyzing the relationships between AsyncAPI documents. It outputs a map of the system architecture. | JavaScript
 
@@ -128,7 +128,7 @@ The following is a list of [GitHub Actions](https://github.com/features/actions)
 | :------------- | :------------- |
 | [AsyncAPI GitHub Action](https://github.com/marketplace/actions/asyncapi-github-action) | This action validates if the AsyncAPI schema file is valid or not.
 | [Generator for AsyncAPI documents](https://github.com/marketplace/actions/generator-for-asyncapi-documents) | This action generates whatever you want using your AsyncAPI document. It uses [AsyncAPI Generator](https://github.com/asyncapi/generator).
-| [API documentation on Bump](https://github.com/marketplace/actions/api-documentation-on-bump) | With this GitHub Action you can automatically generate your API reference (with the changelog and diff) on [Bump](https://bump.sh) from any AsyncAPI file.
+| [API documentation generation on Bump.sh](https://github.com/marketplace/actions/api-documentation-on-bump) | With this GitHub Action you can automatically generate your API reference (with the changelog and diff) on [Bump.sh](https://bump.sh) from any AsyncAPI file.
 | [Automated version bump for AsyncAPI documents](https://github.com/marketplace/actions/automated-version-bump-for-asyncapi) | With this GitHub Action, you can automatically bump the version based on commit messages, which is similar to what semantic-release is for NPM. |
 
 ## Mocking and Testing {#mocking}
@@ -139,7 +139,7 @@ The tools below take specification documents as input, then publish fake message
 | :------------- | :------------- | :------------- |
 | [Microcks](https://microcks.io) | Mocking and testing platform for API and microservices. Turn your AsyncAPI, OpenAPI contract examples, or Postman collections into ready-to-use mocks. Use examples to simulate and validate received messages according to schema elements. | Kubernetes-native, Self-hosted / SaaS, Open Source |
 | [Virtualan](https://virtualan.io) | Mocking and testing platform for API and microservices. Allows you to create and setup mocks for OpenAPI and AsyncAPI contracts. Shows how to setup and create AsyncAPI [GitHub Reference Examples](https://github.com/virtualansoftware/AsyncAPI-Virtualization) and OpenAPI [GitHub Reference Examples](https://github.com/virtualansoftware/service-virtualization-openapi). | Kubernetes-native, Self-hosted / SaaS, Open Source |
-| [MultiAPI Converter](https://github.com/corunet/scc-multiapi-converter) | Use AsyncAPI definition, to generate Spring Cloud Contract producer validation or consumer stubs, using maven. | [Spring Cloud Contract](https://cloud.spring.io/spring-cloud-contract/spring-cloud-contract-maven-plugin/)
+| [MultiAPI Converter](https://github.com/sngular/scc-multiapi-converter) | Use AsyncAPI definition, to generate Spring Cloud Contract producer validation or consumer stubs, using maven. | [Spring Cloud Contract](https://cloud.spring.io/spring-cloud-contract/spring-cloud-contract-maven-plugin/)
 
 ## Validators {#validators}
 
@@ -163,20 +163,3 @@ The following is a list of tools that compare AsyncAPI documents.
 | :------------- | :------------- | :----------------- |
 | [diff](https://github.com/asyncapi/diff) | Diff is a library that compares two AsyncAPI documents and provides information about the differences by pointing out explicitly information like breaking changes. | JavaScript
 | [api-smart-diff](https://github.com/udamir/api-smart-diff) | It allows you to compare two API documents and classify changes. Supported API specifications: OpenAPI, AsyncAPI, JsonSchema. Thanks to [@udamir](https://github.com/udamir). | JavaScript
-
----
-
-<DocsButton
-  suggestions={[
-    {
-      href: '/docs/tutorials/streetlights',
-      title: 'Tutorials - Streetlights',
-      type:'back',
-    },
-    {
-      href: '/docs/guides',
-      title: 'Guides - Overview',
-      type:'next',
-    }
-  ]}
-/>

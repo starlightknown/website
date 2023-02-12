@@ -10,6 +10,16 @@
 		]
 	},
 	{
+		"name": "Abir Pal",
+		"linkedin": "imabp",
+		"twitter": "imabptweets",
+		"github":"imabp",
+		"availableForHire": false,
+		"repos": [
+			 "problem"
+		]
+	},
+	{
 		"name": "Akshat Nema",
 		"github": "akshatnema",
 		"linkedin": "akshat-nema",
@@ -126,7 +136,8 @@
 		"github": "KhudaDad414",
 		"twitter": "KhudaDadNomani",
 		"linkedin": "khudadadnomani",
-		"availableForHire": true,
+		"availableForHire": false,
+		"company": "Postman",
 		"repos": [
 			"optimizer",
 			"bindings"
@@ -201,7 +212,7 @@
 			"parser-js",
 			"parser-go",
 			"playground",
-                        "server-api",
+			"server-api",
 			"template-for-go-projects",
 			"website"
 		]
@@ -258,6 +269,16 @@
 		"availableForHire": false,
 		"repos": [
 			"jasyncapi"
+		]
+	},
+	{
+		"name": "Pratik Haldankar",
+		"github": "pratik2315",
+		"linkedin": "pratik-haldankar-1b237a205",
+		"twitter": "PratikHaldankr",
+		"availableForHire": true,
+		"repos": [
+			"generator"
 		]
 	},
 	{
@@ -416,6 +437,16 @@
 		]
 	},
 	{
+		"name": "Florence Njeri",
+		"github": "Florence-Njeri",
+		"linkedin": "florencenjeri",
+		"twitter": "njericodes",
+		"availableForHire": true,
+		"repos": [
+			"generator"
+		]
+	},
+	{
 		"name": "Jeremy Whitlock",
 		"github": "whitlockjc",
 		"linkedin": "whitlockjc",
@@ -437,6 +468,34 @@
 			"bindings",
 			"spec",
 			"spec-json-schemas"
+		]
+	},
+	{
+		"name": "Viacheslav Turovskyi",
+		"github": "aeworxet",
+		"availableForHire": false,
+		"repos": [
+			"bundler"
+		]
+	},
+	{
+		"name": "Alexander Wichmann",
+		"github": "VisualBean",
+		"linkedin": "alexcarlsen",
+		"availableForHire": false,
+		"company": "The LEGO Group",
+		"repos": [
+			"bindings"
+		]
+	},
+	{
+		"name": "Louis Xhaferi",
+		"github": "LouisXhaferi",
+		"linkedin": "louis-xhaferi-45608b1a3",
+		"availableForHire": false,
+		"company": "Mercedes-Benz Tech Innovation",
+		"repos": [
+			"modelina"
 		]
 	}
 ]
